@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "RF Dewi Expanded";
+    src: url(../fonts/RFDewiExpanded-Black.woff2);
+}
+
+@font-face {
+    font-family: "RF Dewi Extended";
+    src: url(../fonts/RFDewiExtended-Black.woff2);
+}
+
+body {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 10px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    padding:26px 11px;
+    box-sizing: border-box;
+    @media (min-width:768px) {
+        justify-content: space-around;
+    }
+    @media (min-width: 1920px) {
+        justify-content: space-evenly;
+    }
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+    @media (min-width: 768px) {
+        gap: 54px;
+    }
+}
+
+.header-catalog {
+    display: flex;
+    gap: 48px;
+    justify-content: space-between;
+    @media (max-width: 1919px) {
+        display: none;
+    }
+}
+
+.header-catalog-elem {
+    color: white;
+    list-style: none;
+}
+
+.header-catalog-text {
+    margin: 0;
+    color: #FFF;
+    font-family: "RF Dewi Extended";
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.header-catalog-text::after {
+    content: url(../image/down_arrow.svg);
+    padding-left: 11px;
+}
+
+.header-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    position: relative;
+    padding: 7px;
+    gap: 22px;
+}
+
+.search-logo-left {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.list-logo {
+    @media (min-width: 1920px) {
+        display: none;
+    }
+}
+
+.search-logo-right {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.header-logo-left {
+    @media (max-width:768px) {
+        display: none;
+    }
+}
+
+.header-logo-center {
+    @media (min-width:768px) {
+        display: none;
+        gap: 0;
+    }
+}
+
+.market-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.market-notification {
+    position: absolute;
+    background-color:aqua;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: 700;
+    top: 0;
+    right: 0;
+    @media(min-width: 768px) {
+        position: static;
+        font-size: 12px;
+        padding: 2px 6px;
+        border-radius: 30px;
+    }
+}
+
+.market-text {
+    color: var(--light_gray, #8C8F96);
+    text-align: center;
+    font-family: "Cera Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10px;
+    @media (max-width:768px) {
+        display: none;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 25px;
+    padding: 43px 17px 15px 17px;
+    border-radius: 7px;
+    background: radial-gradient(29.15% 68.25% at 21.76% 19.46%, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.00) 100%), 
+    url(../image/hero-background.jpg) lightgray -124.83px -177.815px / 177.303% 167.19%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-top {
+    display: flex;
+    flex-direction: column;
+    max-width: 208px;
+}
+
+.hero-bottom {
+    display: flex;
+    gap: 10px;
+}
+
+.hero-title {
+    color: #171819;
+    font-family: "RF Dewi Expanded";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px; /* 138.889% */
+    text-transform: uppercase;
+    padding-bottom: 7px;
+    margin: 0;
+}
+
+.hero-text {
+    color: var(--black, #121214);
+    font-family: "RF Dewi Extended";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    padding-bottom: 13px;
+    margin: 0;
+}
+
+.hero-button {
+    border: none;
+    border-radius: 5px;
+    background: var(--black, #121214);
+    padding: 23px 21px;
+    box-sizing: border-box;
+}
+
+.hero-button-text {
+    color: #FFF;
+    font-family: "RF Dewi Expanded";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px; /* 200% */
+    text-transform: uppercase;
+}
+
+.hero-button-text::after {
+    content: url(../image/right_arrow.svg);
+    padding-left: 15px;
+}
