@@ -27,8 +27,10 @@ ul {
 .main {
     display: flex;
     flex-direction: column;
-
     padding: 0 10px;
+    @media (min-width: 768px) {
+        padding: 0 20px;
+    }
 }
 
 .header {
@@ -177,17 +179,40 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media (min-width: 768px) {
+        gap: 19px;
+        padding: 59px 70px 32px 70px;
+        background: radial-gradient(141.69% 67.15% at 88.84% 33.6%, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.00) 100%), url(../image/hero-background.jpg) lightgray -258.547px -359.394px / 163.674% 248.398% no-repeat, url(../image/hero-background.jpg) lightgray -0.945px -41.218px / 100.389% 163.464% no-repeat, url(../image/hero-background.jpg) lightgray 0px -16.106px / 100% 107.142% no-repeat, linear-gradient(180deg, #9DF2EB 0%, #9CF3EA 100%);
+        height: 451px;
+    }
+    @media (min-width: 1920px) {
+        gap: 63px;
+    }
 }
 
 .hero-top {
     display: flex;
     flex-direction: column;
-    max-width: 208px;
+    max-width: 225px;
+    @media (min-width: 768px) {
+        max-width: 367px;
+        gap: 19px;
+    }
+    @media (min-width:1920px) {
+        max-width: 571px;
+    }
 }
 
 .hero-bottom {
     display: flex;
     gap: 10px;
+    @media (min-width: 768px) {
+        max-width: 367px;
+    }
+}
+
+.swipe {
+    width: 67px;
 }
 
 .hero-title {
@@ -196,10 +221,19 @@ ul {
     font-size: 18px;
     font-style: normal;
     font-weight: 900;
-    line-height: 25px; /* 138.889% */
+    line-height: 25px;
     text-transform: uppercase;
     padding-bottom: 7px;
     margin: 0;
+    @media (min-width: 768px) {
+        font-size: 34px;
+        line-height: 43px;
+        padding: 0;
+    }
+    @media (min-width: 1920px) {
+        font-size: 51px;
+        line-height: 63px;
+    }
 }
 
 .hero-text {
@@ -210,13 +244,23 @@ ul {
     line-height: 19px;
     padding-bottom: 13px;
     margin: 0;
+    @media (min-width: 768px) {
+        padding: 0;
+        font-size: 17px;
+        line-height: 27px;
+    }
+    @media (min-width: 1920px) {
+        font-size: 19px;
+        line-height: 32px;
+    }
 }
 
 .hero-button {
+    max-width: 225px;
     border: none;
     border-radius: 5px;
     background: var(--black, #121214);
-    padding: 23px 21px;
+    padding: 23px 27px;
     box-sizing: border-box;
 }
 
@@ -232,5 +276,5 @@ ul {
 
 .hero-button-text::after {
     content: url(../image/right_arrow.svg);
-    padding-left: 15px;
+    padding-left: 10px;
 }
