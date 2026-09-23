@@ -47,7 +47,7 @@ ul {
     @media (min-width:768px) {
         justify-content: space-around;
     }
-    @media (min-width: 1920px) {
+    @media (min-width: 1200px) {
         justify-content: space-evenly;
     }
 }
@@ -66,7 +66,7 @@ ul {
     display: flex;
     gap: 48px;
     justify-content: space-between;
-    @media (max-width: 1919px) {
+    @media (max-width: 1200px) {
         display: none;
     }
 }
@@ -85,7 +85,7 @@ ul {
     text-transform: capitalize;
 }
 
-.header-catalog-text::after {
+.arrow-down::after {
     content: url(../image/down_arrow.svg);
     padding-left: 11px;
 }
@@ -106,7 +106,7 @@ ul {
 }
 
 .list-logo {
-    @media (min-width: 1920px) {
+    @media (min-width: 1200px) {
         display: none;
     }
 }
@@ -170,23 +170,29 @@ ul {
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    box-sizing: content-box;
     gap: 24px;
     margin-top: 25px;
+    margin-bottom: 32px;
     padding: 43px 17px 15px 17px;
     border-radius: 7px;
-    background: radial-gradient(29.15% 68.25% at 21.76% 19.46%, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.00) 100%), 
-    url(../image/hero-background.jpg) lightgray -124.83px -177.815px / 177.303% 167.19%;
-    background-position: center;
+    background: radial-gradient(29.15% 68.25% at 21.76% 19.46%, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.00) 100%), url(../image/hero-background.jpg) lightgray -124.83px -177.815px / 177.303% 167.19% no-repeat;
+    background-position: center, center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     @media (min-width: 768px) {
         gap: 19px;
         padding: 59px 70px 32px 70px;
         background: radial-gradient(141.69% 67.15% at 88.84% 33.6%, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.00) 100%), url(../image/hero-background.jpg) lightgray -258.547px -359.394px / 163.674% 248.398% no-repeat, url(../image/hero-background.jpg) lightgray -0.945px -41.218px / 100.389% 163.464% no-repeat, url(../image/hero-background.jpg) lightgray 0px -16.106px / 100% 107.142% no-repeat, linear-gradient(180deg, #9DF2EB 0%, #9CF3EA 100%);
-        height: 451px;
+        background-size: cover;
+        background-position: center, center top;
     }
-    @media (min-width: 1920px) {
+    @media (min-width: 1200px) {
         gap: 63px;
+        border-radius: 7px;
+        background: radial-gradient(141.69% 67.15% at 88.84% 33.6%, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.00) 100%), url(../image/hero-background.jpg) lightgray 0px -480.255px / 100% 229.608% no-repeat, url(//image/hero-background.jpg) lightgray -2px -57.668px / 100.389% 163.464% no-repeat, url(../image/hero-background.jpg) lightgray 0px -22.534px / 100% 107.142% no-repeat, linear-gradient(180deg, #9DF2EB 0%, #9CF3EA 100%);
+        background-position: top, 70%;
     }
 }
 
@@ -198,7 +204,7 @@ ul {
         max-width: 367px;
         gap: 19px;
     }
-    @media (min-width:1920px) {
+    @media (min-width:1200px) {
         max-width: 571px;
     }
 }
@@ -230,7 +236,7 @@ ul {
         line-height: 43px;
         padding: 0;
     }
-    @media (min-width: 1920px) {
+    @media (min-width: 1200px) {
         font-size: 51px;
         line-height: 63px;
     }
@@ -249,7 +255,7 @@ ul {
         font-size: 17px;
         line-height: 27px;
     }
-    @media (min-width: 1920px) {
+    @media (min-width: 1200px) {
         font-size: 19px;
         line-height: 32px;
     }
@@ -275,6 +281,133 @@ ul {
 }
 
 .hero-button-text::after {
-    content: url(../image/right_arrow.svg);
+    content: url(../image/hero-button-right-arrow.svg);
     padding-left: 10px;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.block-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.block-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-bottom {
+    display: flex;
+    gap: 45px;
+    justify-content: space-between;
+}
+
+.block-title {
+    color: var(--black, #121214);
+    font-family: "RF Dewi Expanded";
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+
+.block-more-mobile {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.block-more-desktop {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.block-more {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "RF Dewi Extended";
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 23px; /* 191.667% */
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #000;
+}
+
+.block-more::after {
+    content: url(../image/catalog-right-arrow.svg);
+    padding-left: 10px;
+}
+
+.block-body {
+    display: flex;
+    gap: 20px;
+}
+
+.card-desktop {
+    @media (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.card-img {
+    display: block;
+    max-width: 318px;
+    max-height: 318px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-star {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card-name {
+    color: #000;
+    font-family: "RF Dewi Extended";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px; /* 128.571% */
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.card-price {
+    color: #3C3C3C;
+    font-family: "RF Dewi Extended";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
 }
