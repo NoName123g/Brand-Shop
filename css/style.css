@@ -27,9 +27,12 @@ ul {
 .main {
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
+}
+
+.container {
+    margin: 0 10px;
     @media (min-width: 768px) {
-        padding: 0 20px;
+        margin: 0 20px;
     }
 }
 
@@ -211,7 +214,6 @@ ul {
 
 .hero-bottom {
     display: flex;
-    gap: 10px;
     @media (min-width: 768px) {
         max-width: 367px;
     }
@@ -289,6 +291,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
     gap: 60px;
 }
 
@@ -350,6 +353,7 @@ ul {
     border: none;
     background: none;
     border-bottom: 2px solid #000;
+    cursor: pointer;
 }
 
 .block-more::after {
@@ -411,3 +415,143 @@ ul {
     line-height: 20px;
     margin: 0;
 }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background: radial-gradient(115.19% 118.79% at 16.91% 0%, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(274deg, #BCBFC7 -4.34%, #D5D7DC 46.57%), #D9D9D9;
+}
+
+.calculator-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+    padding: 33px 11px 36px 11px;
+}
+
+.calculator-bg {
+    position: absolute;
+    inset: 0;
+    background: url(../image/hero-background.jpg) center / cover no-repeat;
+    transform: scaleX(-1);   /* зеркалим только фон */
+    z-index: 0;
+    background: linear-gradient(231deg, #0D99F8 8.52%, #21A0F8 12.76%, #54B5FF 33.8%, #0DBBF8 83.23%, #0DDBF8 100.96%);
+}
+
+.calculator-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 318px;
+    margin: 0 auto;
+}
+
+.calculator-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 318px;
+    margin: 0 auto;
+}
+
+.calculator-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.calculator-title {
+    color: #FFF;
+    text-align: center;
+    font-family: "RF Dewi Expanded";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; /* 139.13% */
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.calculator-text {
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+    font-family: sans-serif;
+}
+
+.calculator-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 23px;
+}
+
+.circle-container {
+    position: relative;
+}
+
+.circle {
+    display: block;
+    fill: rgba(255, 255, 255, 0.01);
+    stroke-width: 1px;
+    stroke: rgba(255, 255, 255, 0.46);
+}
+
+.circle-text {
+    font-family: "RF Dewi Expanded";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; /* 58.333% */
+}
+
+.calculator-block-text {
+    font-family: "RF Dewi Extended";
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px; /* 150% */
+}
+
+.calculator-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 318px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 5px;
+    background: var(--black, #121214);
+    padding: 23px 27px;
+}
+
+.calculator-button-text {
+    color: #FFF;
+    font-family: "RF Dewi Expanded";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px; /* 200% */
+    text-transform: uppercase;
+}
+
+.calculator-button-text::after{
+    content: url(../image/hero-button-right-arrow.svg);
+    padding-left: 15px;
+}
+
