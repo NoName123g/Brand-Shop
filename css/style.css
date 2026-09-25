@@ -433,7 +433,7 @@ ul {
     border-radius: 7px;
     padding: 33px 11px 36px 11px;
     @media (min-width: 768px) {
-        padding: 70px 36px 70px 42px;
+        padding: 36px 60px 42px 70px;
     }
 }
 
@@ -457,22 +457,30 @@ ul {
 .calculator-top {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
     max-width: 318px;
-    margin: 0 auto;
     margin-bottom: 22px;
     @media (min-width: 768px) {
         gap: 19px;
         max-width: 400px;
+        padding-right: 260px;
         margin-bottom: 50px;
+        align-items: flex-start;
+    }
+}
+
+.phone {
+    position: absolute;
+    right: 30px;
+    top: -75px;
+    @media (max-width: 768px) {
+        display: none;
     }
 }
 
 .calculator-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 24px;
     @media (min-width: 768px) {
         flex-direction: row;
@@ -481,10 +489,9 @@ ul {
 
 .calculator-title {
     color: #FFF;
-    text-align: center;
     font-family: "RF Dewi Expanded";
+    text-align: center;
     font-size: 23px;
-    font-style: normal;
     font-weight: 900;
     line-height: 32px; /* 139.13% */
     text-transform: uppercase;
@@ -492,21 +499,22 @@ ul {
     @media (min-width: 768px) {
         font-size: 34px;
         line-height: 43px;
+        text-align: initial;
     }
 }
 
 .calculator-text {
+    text-align: center;
     margin: 0;
     color: #FFF;
-    text-align: center;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 21px; /* 150% */
     font-family: sans-serif;
     @media (min-width: 768px) {
         font-size: 17px;
         line-height: 27px;
+        text-align: initial;
     }
 }
 
