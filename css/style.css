@@ -451,7 +451,8 @@ p {
         padding-top: 300px;
     }
     @media (min-width: 1400px) {
-        padding-top: 470px;
+        padding-top: 400px;
+        margin-top: 340px;
     }
 }
 
@@ -460,6 +461,9 @@ p {
     top: -200px;
     @media (min-width: 768px) {
         top: -210px;
+    }
+    @media (min-width: 1400px) {
+        top: -300px;
     }
 }
 
