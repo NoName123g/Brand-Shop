@@ -446,6 +446,8 @@ p {
     }
     @media (min-width: 768px) {
         padding-top: 330px;
+        padding-bottom: 200px;
+        margin-bottom: 60px;
     }
     @media (min-width: 816px) {
         padding-top: 300px;
@@ -743,6 +745,8 @@ p {
     max-width: 730px;
     margin: 0 11px;
     @media (min-width: 768px) {
+        position: absolute;
+        bottom: -50px;
         padding: 28px;
     }
     @media (min-width: 820px) {
@@ -825,6 +829,9 @@ p {
 .blog {
     margin-top: 28px;
     margin-bottom: 80px;
+    @media (min-width: 768px) {
+        margin-top: 80px;
+    }
 }
 
 .blog-container {
