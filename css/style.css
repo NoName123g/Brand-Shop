@@ -822,3 +822,122 @@ p {
         display: none;
     }
 }
+.blog {
+    margin-top: 28px;
+    margin-bottom: 80px;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+}
+
+.blog-body {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.blog-bottom {
+    display: flex;
+    gap: 45px;
+}
+
+.blog-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.post-body {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.post-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-img {
+    width: 100%;
+}
+
+.blog-title {
+    color: var(--black, #121214);
+    font-family: "RF Dewi Expanded";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px; /* 221.053% */
+    text-transform: uppercase;
+}
+
+.blog-button {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "RF Dewi Extended";
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 23px; /* 191.667% */
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+}
+
+.blog-button::after {
+    content: url(../image/catalog-right-arrow.svg);
+    padding-left: 10px;
+}
+
+.post-name {
+    color: var(--black, #121214);
+    font-family: "RF Dewi Extended";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 138.889% */
+}
+
+.post-text {
+    color: var(--dark_gray, #303030);
+    font-family: "RF Dewi Extended";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+}
+
+.post-button {
+    color: #000;
+    font-family: "RF Dewi Extended";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 15px; /* 115.385% */
+    text-transform: uppercase;
+    border: none;
+    background: none;
+}
+
+.post-date {
+    color: var(--light_gray, #8C8F96);
+    text-align: right;
+    font-family: "RF Dewi Extended";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; /* 209.091% */
+    text-transform: uppercase;
+}
