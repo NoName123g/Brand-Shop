@@ -453,6 +453,8 @@ p {
         padding-top: 300px;
     }
     @media (min-width: 1400px) {
+        margin-bottom: 0;
+        padding-bottom: 40px;
         padding-top: 400px;
         margin-top: 340px;
     }
@@ -753,6 +755,8 @@ p {
         margin: 0;
     }
     @media (min-width: 1400px) {
+        position: relative;
+        top: 0;
         padding: 40px 40px 10px 53px;
     }
 }
@@ -845,6 +849,9 @@ p {
     display: flex;
     flex-direction: column;
     gap: 26px;
+    @media (min-width: 768px) {
+        gap: 33px;
+    }
 }
 
 .blog-bottom {
@@ -857,10 +864,29 @@ p {
     justify-content: space-between;
 }
 
+.blog-posts {
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 31px;
+    }
+}
+
 .post {
     display: flex;
     flex-direction: column;
     gap: 13px;
+}
+
+.tablet {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.desktop {
+    @media (max-width: 1400px) {
+        display: none;
+    }
 }
 
 .post-body {
@@ -886,6 +912,9 @@ p {
     font-weight: 900;
     line-height: 42px; /* 221.053% */
     text-transform: uppercase;
+    @media (max-width: 768px) {
+        font-size: 25px;
+    }
 }
 
 .blog-button {
@@ -901,6 +930,9 @@ p {
     background: none;
     border-bottom: 2px solid #000;
     cursor: pointer;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
 }
 
 .blog-button::after {
@@ -915,6 +947,10 @@ p {
     font-style: normal;
     font-weight: 700;
     line-height: 25px; /* 138.889% */
+    @media (max-width: 768px) {
+        font-size: 17px;
+        line-height: 22px;
+    }
 }
 
 .post-text {
@@ -924,6 +960,10 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 160% */
+    @media (max-width: 768px) {
+        font-size: 13px;
+        line-height: 22px;
+    }
 }
 
 .post-button {
@@ -936,6 +976,9 @@ p {
     text-transform: uppercase;
     border: none;
     background: none;
+    @media (max-width: 768px) {
+        font-size: 11px;
+    }
 }
 
 .post-date {
