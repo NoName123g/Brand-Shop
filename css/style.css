@@ -1202,6 +1202,10 @@ p {
     .footer {
         background: var(--black, #121214);
         padding: 38px 50px;
+        @media (min-width: 1400px) {
+            padding-top: 45px;
+            padding-bottom: 52px;
+        }
     }
 
     .footer-container {
@@ -1210,6 +1214,9 @@ p {
         max-width: 1000px;
         margin: 0 auto;
         gap: 30px;
+        @media (min-width: 1400px) {
+            max-width: 1351px;
+        }
     }
 
     .footer-nav {
@@ -1218,9 +1225,9 @@ p {
     }
 
     .footer-list {
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
+        @media (min-width: 1400px) {
+            margin-bottom: 40px;
+        }
     }
 
     .footer-list li {
@@ -1279,6 +1286,23 @@ p {
         text-transform: uppercase;
     }
 
+    .relative {
+        @media (min-width: 1400px) {
+            position: relative;
+        }
+    }
+
+    .list-container-left,.list-container-center {
+        position: relative;
+    }
+
+    .footer-bottom-desktop {
+        @media (min-width: 1400px) {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
     .footer-media {
         display: flex;
         gap: 9px;
@@ -1288,11 +1312,23 @@ p {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @media (min-width: 1400px) {
+            max-width: 351px;
+        }
     }
 
     .subscribe-top {
         display: flex;
         justify-content: space-between;
+        @media (min-width: 1400px) {
+            flex-direction: column;
+        }
+    }
+
+    .subscribe-bottom {
+        @media (min-width: 1400px) {
+            max-width: 300px;
+        }
     }
 
     .subscribe-left {
@@ -1324,6 +1360,9 @@ p {
         max-width: 320px;
         width: 100%;
         padding-top: 15px;
+        @media (min-width: 1400px) {
+            max-width: 300px;
+        }
     }
 
     .email-container {
