@@ -897,8 +897,14 @@ p {
     }
 }
 
+.only-tablet { 
+    @media (max-width: 768px), (min-width: 1400px) {
+        display: none;
+    }
+}
+
 .tablet {
-    @media (max-width: 768px),  (min-width: 1400px) {
+    @media (max-width: 768px){
         display: none;
     }
 }
